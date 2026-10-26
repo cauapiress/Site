@@ -1,0 +1,63 @@
+
+/*cabeçario*/
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: #000000;
+ 
+    nav{
+        display: flex;
+        gap: 15px;
+    }
+    nav a{
+        text-decoration: none;
+        margin-right: 15px;
+        color: white;
+        font-size: 18px;
+    }
+    nav a.ativo {
+        font-weight: bold;
+        color: #2b07ce;
+    }
+}
+
+img {
+     width: 250px;
+    height: 150px;
+    object-fit: fill;
+    flex-shrink: 0;
+}
+
+p{
+    font-size: 12pt;
+    color:  rgb(245, 245, 245);
+}
+
+/*corpo do site*/
+
+body{
+    background-color: lch(0.55% 0 296.81);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*imagem principal*/
+
+.img-principal {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.img-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
