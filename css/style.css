@@ -1,63 +1,140 @@
-
-/*cabeçario*/
-
-header {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    background-color: #000000;
- 
-    nav{
-        display: flex;
-        gap: 15px;
-    }
-    nav a{
-        text-decoration: none;
-        margin-right: 15px;
-        color: white;
-        font-size: 18px;
-    }
-    nav a.ativo {
-        font-weight: bold;
-        color: #2b07ce;
-    }
-}
-
-img {
-     width: 250px;
-    height: 150px;
-    object-fit: fill;
-    flex-shrink: 0;
-}
-
-p{
-    font-size: 12pt;
-    color:  rgb(245, 245, 245);
-}
-
-/*corpo do site*/
-
-body{
-    background-color: lch(0.55% 0 296.81);
-    color: white;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/*imagem principal*/
+body {
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
-.img-principal {
+header {
+    background-color: #000000;
+    height: 120px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+gap: 300px;
+box-shadow: 0 2px 10px rgba(52, 48, 241, 0.829);
+}
+
+nav {
+    margin-right: 30px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0d0ad6;
+    transition: 0.3s;
+}
+
+.btn-contato {
+    background-color: #0d0ad6;
+    padding: 12px 22px;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #0d0ad6;
+    color: white;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
     width: 100%;
-    height: 550px;
-    margin-top: 20px;
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 60px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
-.img-principal img {
+/* IMAGEM DO BANNER */
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    object-position: center;
-    display: block;
+    object-position: center center;
+
+    z-index: 0;
+}
+
+/* CONTEÚDO DO BANNER */
+.banner-conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+/* TÍTULO */
+.banner h1 {
+    font-size: 46px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* DESCRIÇÃO */
+.banner p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.btn-servicos {
+    display: inline-block;
+    background-color: #0800ff;
+    color: white;
+
+    padding: 14px 25px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.btn-servicos:hover {
+    background-color: #0066cc;
 }
